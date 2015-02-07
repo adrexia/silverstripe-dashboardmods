@@ -1,0 +1,175 @@
+/* General */
+
+.cms .dashboard-sortable {
+	margin-right: 0; /* was 40px. Unsure why */
+}
+
+.cms .dashboard-panel-inner {
+	background: #f9f9f9; 
+	border: none;
+	height: 312px;
+	position: relative;
+}
+
+.dashboard-panel .dashboard-panel-content {
+	border-left: 1px solid rgb(218, 216, 216);
+	border-right: 1px solid rgb(218, 216, 216);
+}
+
+.cms .dashboard-panel-inner .dashboard-panel-header {
+	padding: 13px 0 13px 54px;
+	background: #728896;
+	border: 1px solid #b3c0c9;
+	cursor: move;
+	color: #fff;
+	overflow:hidden;
+	border-radius: 3px 3px 0 0;
+}
+
+.dashboard-panel.DashboardModelAdminPanel .dashboard-panel-header {
+	background: #F50057;
+}
+.dashboard-panel.DashboardRecentEditsPanel .dashboard-panel-header {
+	background: #4A148C;
+}
+
+.dashboard-panel.DashboardGridFieldPanel .dashboard-panel-header {
+	background: #1A237E;
+}
+
+.dashboard-panel.DashboardWeatherPanel .dashboard-panel-header {
+	background: #FF3D00;
+}
+
+.dashboard-panel.DashboardQuickLinksPanel .dashboard-panel-header {
+	background: #2962FF;
+}
+
+.dashboard-panel.DashboardRecentFilesPanel .dashboard-panel-header {
+	background: #43A047;
+}
+
+.dashboard-panel.DashboardSectionEditorPanel .dashboard-panel-header {
+	background: #00796B;
+}
+
+.cms .dashboard-panel-inner .dashboard-panel-icon {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 10px;
+	background: rgba(255,255,255,0.6);
+	border-right: 1px solid rgba(255,255,255,0.2);
+	height: 24px;
+}
+
+/* Replace add text with plus due to space limitations */
+.dashboard-panel-header-actions .ui-button span {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+.dashboard-panel-header-actions .ui-button {
+	width: 24px;
+	height: 24px;
+}
+.dashboard-panel-header-actions .ui-button:after {
+	content: '+';
+	font-size: 15px;
+	padding-top: 4px;
+	display: block;
+}
+
+
+.cms .dashboard-panel-inner ul {
+	margin: -10px;
+}
+.cms .dashboard-panel-inner ul li {
+	border: 1px solid #eee;
+}
+.cms .dashboard-panel-inner ul a {
+	padding: 3px 10px;
+	font-size: 11px;
+}
+.cms .dashboard-panel-header-actions {
+	position: static; 
+	margin-right: 5px;
+	float: left;
+}
+
+.cms .dashboard-panel-footer {
+	background: #F0F4F7;
+	border: 1px solid rgb(218, 216, 216);
+	border-radius: 0 0 3px 3px;
+}
+
+.cms .dashboard-panel-inner .dashboard-panel-configure-actions {
+	background: #F0F4F7;
+	border: 1px solid rgb(218, 216, 216);
+	border-top: none;
+	box-shadow: none;
+	padding: 3px 10px;
+	text-align: left;
+	height: 29px;
+}
+
+.cms .dashboard-panel-inner .dashboard-panel-configure-fields {
+	background: #f9f9f9; 
+	border: 1px solid rgb(218, 216, 216);
+	height: 257px;
+}
+
+.cms .dashboard-panel-inner ul li a:hover {
+	background: #F0F4F7;
+	text-decoration: none;
+	color: #015a96;
+}
+
+.cms .dashboard-panel-footer-actions {
+	text-align: left;
+	margin-left: 5px;
+}
+
+.cms .dashboard-panel-list {
+	margin-bottom: 10px;
+}
+
+.DashboardSectionEditorPanel .dashboard-panel-header img {
+	display: none; /* Image used doesn't fit and we can't replace it in config */
+}
+
+.cms .DashboardSectionEditorPanel .dashboard-panel-icon {
+	height: 24px;
+	width: 24px;
+	background-image: url(../images/work.png); /* replace img */
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.available-panel-icon img {
+	width: 24px !important; /*override inline*/
+	height: 24px !important;
+}
+.cms .available-panel {
+	background: #F0F4F7;
+	box-shadow: none;
+	border: 1px solid rgb(218, 216, 216);
+}
+
+.cms .available-panel:hover {
+	background: #E0E8ED;
+}
+
+.cms .ss-fancy-dropdown-options {
+	border-radius: 3px;
+	box-shadow: none;
+}
+
+.ss-fancy-dropdown-options a:first-child {
+	border-radius: 3px 3px 0 0;
+}
+.ss-fancy-dropdown-options a:last-child {
+	border-radius: 0 0 3px 3px;
+}
+
+
+

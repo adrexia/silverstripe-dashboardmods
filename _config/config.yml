@@ -1,0 +1,21 @@
+---
+Name: moduleconfig
+After: 'framework/*','cms/*', 'dashboard '
+---
+LeftAndMain:
+  extra_requirements_css:
+   - 'dashboardmods/css/dashboard.css'
+Dashboard:
+  menu_icon: "dashboardmods/images/dashboard.png"
+DashboardPanel:
+  icon: "dashboardmods/images/storage.png";
+DashboardRecentEditsPanel:
+  icon: "dashboardmods/images/edit.png";
+DashboardRecentFilesPanel:
+  icon: "dashboardmods/images/cloud-upload.png";
+DashboardQuickLinksPanel:
+  icon: "dashboardmods/images/link.png";
+DashboardRSSFeedPanel: 
+  icon: "dashboardmods/images/rss.png";
+DashboardWeatherPanel:
+  icon: "dashboardmods/images/weather.png";
