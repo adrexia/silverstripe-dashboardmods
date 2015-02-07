@@ -1,7 +1,10 @@
 /* General */
 
+.dashboard-admin {
+	height: auto !important;
+}
 .cms .dashboard-sortable {
-	margin-right: 0; /* was 40px. Unsure why */
+	margin: 35px 0 0 20px; 
 }
 
 .cms .dashboard-panel-inner {
@@ -16,15 +19,24 @@
 	border-right: 1px solid rgb(218, 216, 216);
 }
 
+.cms .dashboard-panel-header h3 {
+	/*font-weight: normal;
+	font-size: 12px;*/
+}
+
 .cms .dashboard-panel-inner .dashboard-panel-header {
-	padding: 13px 0 13px 54px;
+	padding: 13px 0 11px 47px;
 	background: #728896;
 	border: 1px solid #b3c0c9;
 	cursor: move;
 	color: #fff;
 	overflow:hidden;
 	border-radius: 3px 3px 0 0;
+	position: relative;
+	z-index: 0;
 }
+
+
 
 .dashboard-panel.DashboardModelAdminPanel .dashboard-panel-header {
 	background: #F50057;
@@ -57,10 +69,10 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	padding: 10px;
+	padding: 7px;
 	background: rgba(255,255,255,0.6);
 	border-right: 1px solid rgba(255,255,255,0.2);
-	height: 24px;
+	height: 26px;
 }
 
 /* Replace add text with plus due to space limitations */
@@ -69,27 +81,43 @@
 	clip: rect(1px, 1px, 1px, 1px);
 }
 .dashboard-panel-header-actions .ui-button {
-	width: 24px;
-	height: 24px;
+	width: 19px;
+	height: 19px;
 }
 .dashboard-panel-header-actions .ui-button:after {
 	content: '+';
 	font-size: 15px;
-	padding-top: 4px;
+	padding-top: 2px;
 	display: block;
 }
 
+.dashboard-panel-configure-actions .ui-button .ui-button-text,
+.dashboard-panel-footer-actions .ui-button .ui-button-text {
+	padding: .2em 0.8em;
+}
+.cms .dashboard-panel-footer .dashboard-panel-toolbar {
+	top: 8px;
+}
 
-.cms .dashboard-panel-inner ul {
+.cms .dashboard-panel-footer {
+	min-height: 20px;
+}
+
+.cms .dashboard-panel .dashboard-panel-content {
+	height: 220px;
+}
+
+.cms .dashboard-panel-content > ul {
 	margin: -10px;
 }
-.cms .dashboard-panel-inner ul li {
+.cms .dashboard-panel-content > ul li {
 	border: 1px solid #eee;
 }
-.cms .dashboard-panel-inner ul a {
+.cms .dashboard-panel-content > ul a {
 	padding: 3px 10px;
 	font-size: 11px;
 }
+/* Not actually in the header anymore */
 .cms .dashboard-panel-header-actions {
 	position: static; 
 	margin-right: 5px;
@@ -103,19 +131,20 @@
 }
 
 .cms .dashboard-panel-inner .dashboard-panel-configure-actions {
+	border-radius: 0 0 3px 3px;
 	background: #F0F4F7;
 	border: 1px solid rgb(218, 216, 216);
 	border-top: none;
 	box-shadow: none;
 	padding: 3px 10px;
 	text-align: left;
-	height: 29px;
+	height: 24px;
 }
 
 .cms .dashboard-panel-inner .dashboard-panel-configure-fields {
 	background: #f9f9f9; 
 	border: 1px solid rgb(218, 216, 216);
-	height: 257px;
+	height: 261px;
 }
 
 .cms .dashboard-panel-inner ul li a:hover {
@@ -138,7 +167,6 @@
 }
 
 .cms .DashboardSectionEditorPanel .dashboard-panel-icon {
-	height: 24px;
 	width: 24px;
 	background-image: url(../images/work.png); /* replace img */
 	background-position: center;
@@ -171,5 +199,56 @@
 	border-radius: 0 0 3px 3px;
 }
 
+.cms .dashboard-panel {
+	position: relative;
+}
 
+.cms .dashboard-has-many-editor-detail-form-form {
+	border-radius: 5px;
+	border: 1px solid rgb(218, 216, 216);
+	box-sizing: border-box;
+	height: 270px;
+	padding: 20px;
+	background-color: #ededed;
+	top: 35px;
+	left: 35px;
+	width: 100%;
+}
+.dashboard-has-many-editor-form {
+	box-sizing: border-box;
+}
 
+.cms .dashboard-has-many-editor-detail-form-form .field .middleColumn {
+	margin-left: 0;
+	clear: both;
+}
+
+.dashboard-has-many-editor-detail-form-form .field.checkbox {
+	padding-left: 0;
+}
+
+.cms .dashboard-has-many-editor {
+	background: transparent;
+	border: 0;
+}
+
+.cms .dashboard-has-many-editor-header {
+	padding:0;
+}
+
+.cms .dashboard-has-many-editor .dashboard-sortable {
+	border-top: 1px solid rgb(218, 216, 216);
+	margin: 0 -10px;
+}
+
+.cms .dashboard-has-many-editor .dashboard-sortable li {
+	padding:0;
+	margin:0;
+}
+.cms .dashboard-has-many-editor .dashboard-sortable li a:first-child {
+	padding: 6px 10px;
+}
+
+.cms .dashboard-panel-quick-link {
+	margin: 0;
+}
