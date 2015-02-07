@@ -8,6 +8,6 @@
     {
             "silverstripe/framework": "~3.1",
             "silverstripe/cms": "~3.1",
-            "silverstripe/dashboard": "~1.0"
+            "silverstripe/dashboard": "*"
     }
 }
