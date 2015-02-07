@@ -1,10 +1,11 @@
 /* General */
 
-.dashboard-admin {
-	height: auto !important;
+.cms .dashboard {
+	height: 100%;
+	padding-bottom: 20px;
 }
 .cms .dashboard-sortable {
-	margin: 35px 0 0 20px; 
+	margin: 40px 0 0 20px; 
 }
 
 .cms .dashboard-panel-inner {
@@ -17,11 +18,6 @@
 .dashboard-panel .dashboard-panel-content {
 	border-left: 1px solid rgb(218, 216, 216);
 	border-right: 1px solid rgb(218, 216, 216);
-}
-
-.cms .dashboard-panel-header h3 {
-	/*font-weight: normal;
-	font-size: 12px;*/
 }
 
 .cms .dashboard-panel-inner .dashboard-panel-header {
@@ -159,7 +155,7 @@
 }
 
 .cms .dashboard-panel-list {
-	margin-bottom: 10px;
+	padding-bottom: 53px; /*makes up for 100% height*/
 }
 
 .DashboardSectionEditorPanel .dashboard-panel-header img {
