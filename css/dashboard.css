@@ -32,33 +32,57 @@
 	z-index: 0;
 }
 
-
+.dashboard-panel .configure-form {
+	border-top: 3px solid #728896;
+} 
 
 .dashboard-panel.DashboardModelAdminPanel .dashboard-panel-header {
 	background: #F50057;
 }
+.dashboard-panel.DashboardModelAdminPanel .configure-form {
+	border-color: #F50057;
+}
+
 .dashboard-panel.DashboardRecentEditsPanel .dashboard-panel-header {
 	background: #4A148C;
 }
+.dashboard-panel.DashboardRecentEditsPanel .configure-form {
+	border-color: #4A148C;
+} 
 
 .dashboard-panel.DashboardGridFieldPanel .dashboard-panel-header {
 	background: #1A237E;
 }
+.dashboard-panel.DashboardGridFieldPanel .configure-form {
+	border-color: #1A237E;
+} 
 
 .dashboard-panel.DashboardWeatherPanel .dashboard-panel-header {
 	background: #FF3D00;
 }
+.dashboard-panel.DashboardWeatherPanel .configure-form {
+	border-color: #FF3D00;
+} 
 
 .dashboard-panel.DashboardQuickLinksPanel .dashboard-panel-header {
 	background: #2962FF;
 }
+.dashboard-panel.DashboardQuickLinksPanel .configure-form {
+	border-color: #2962FF;
+} 
 
 .dashboard-panel.DashboardRecentFilesPanel .dashboard-panel-header {
 	background: #43A047;
 }
+.dashboard-panel.DashboardRecentFilesPanel .configure-form {
+	border-color: #43A047;
+} 
 
 .dashboard-panel.DashboardSectionEditorPanel .dashboard-panel-header {
 	background: #00796B;
+}
+.dashboard-panel.DashboardSectionEditorPanel .configure-form {
+	border-color: #00796B;
 }
 
 .cms .dashboard-panel-inner .dashboard-panel-icon {
@@ -132,15 +156,22 @@
 	border: 1px solid rgb(218, 216, 216);
 	border-top: none;
 	box-shadow: none;
-	padding: 3px 10px;
 	text-align: left;
-	height: 24px;
+	height: 21px;
+	padding: 5px 4px;
 }
 
 .cms .dashboard-panel-inner .dashboard-panel-configure-fields {
 	background: #f9f9f9; 
 	border: 1px solid rgb(218, 216, 216);
 	height: 261px;
+}
+.dashboard-panel-configure-fields .field select {
+	margin: 0;
+}
+.dashboard-panel-configure-fields .field {
+	border-bottom: 0;
+	margin: 0;
 }
 
 .cms .dashboard-panel-inner ul li a:hover {
@@ -152,6 +183,11 @@
 .cms .dashboard-panel-footer-actions {
 	text-align: left;
 	margin-left: 5px;
+}
+
+.dashboard-panel-configure-actions .ss-ui-button {
+	font-size: 11px;
+	padding: 0;
 }
 
 .cms .dashboard-panel-list {
@@ -247,4 +283,36 @@
 
 .cms .dashboard-panel-quick-link {
 	margin: 0;
+}
+
+.cms .dashboard-panel-inner form .field.dashboardbuttonoptions .middleColumn {
+	min-width: 0;
+}
+
+.cms .dashboard-button-options-btn-group a.active,
+.cms .dashboard-button-options-btn-group a:hover {
+	opacity: 1;
+}
+
+.cms .dashboard-button-options-btn-group a {
+	opacity: 0.5;
+	width: 21px;
+	height: 10px;
+}
+
+.cms .dashboard-button-options-btn-group a.middle,
+.cms .dashboard-button-options-btn-group a.middle:hover,
+.cms .dashboard-button-options-btn-group a.middle.active  {
+	background: url(../images/half.png) no-repeat;
+	width: 21px;
+}
+.cms .dashboard-button-options-btn-group a.first,
+.cms .dashboard-button-options-btn-group a.first:hover ,
+.cms .dashboard-button-options-btn-group a.first.active {
+	background: url(../images/quarter.png) no-repeat;
+}
+.cms .dashboard-button-options-btn-group a.last,
+.cms .dashboard-button-options-btn-group a.last:hover,
+.cms .dashboard-button-options-btn-group a.last.active {
+	background: url(../images/full.png) no-repeat;
 }
