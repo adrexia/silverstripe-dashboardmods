@@ -9,5 +9,11 @@
     "require": {
         "silverstripe/dashboard": "*",
         "silverstripe/recipe-cms": "^4.4"
+    },
+    "extra": {
+        "expose": [
+            "client/images",
+            "client/css"
+        ]
     }
 }
