@@ -1,5 +1,5 @@
 {
-    "name": "adrexia/dashboardmods",
+    "name": "sunnysideup/dashboardmods",
     "description": "Design modifications to the SilverStripe Dashboard module",
     "type": "silverstripe-module",
     "keywords": ["silverstripe"],
