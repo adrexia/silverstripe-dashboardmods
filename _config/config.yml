@@ -2,7 +2,7 @@
 Name: moduleconfig
 After: 'framework/*','cms/*', 'dashboard '
 ---
-LeftAndMain:
+SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
    - 'dashboardmods/css/dashboard.css'
 Dashboard:

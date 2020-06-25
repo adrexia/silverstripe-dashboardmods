@@ -31,7 +31,16 @@
 				<div class="dashboard-panel-selection-inner">
 					<div class="dashboard-panel-header">
 						<div class="dashboard-panel-icon">
-							<img src="dashboardmods/images/settings.png" width="24" height="24" />
+
+/**
+  * ### @@@@ START REPLACEMENT @@@@ ###
+  * WHY: automated upgrade
+  * OLD: /images/ (case sensitive)
+  * NEW: /client/images/ (COMPLEX)
+  * EXP: Check new location, also see: https://docs.silverstripe.org/en/4/developer_guides/templates/requirements/#direct-resource-urls
+  * ### @@@@ STOP REPLACEMENT @@@@ ###
+  */
+							<img src="dashboardmods/client/images/settings.png" width="24" height="24" />
 						</div>
 
 						<h3><% _t('Dashboard.CHOOSEPANELTYPE','Choose a panel type') %></h3>
